@@ -1,0 +1,9 @@
+# 日志数据采集
+
+log数据一般是整个后台都需要记录的东西,用于错误分析和负载分析,从而为架构师优化架构提供数据支持.比较常见的技术是`ELK`即
+
++ ElasticSearch 用于存储和查询日志数据
++ logstash/fluentd/filebeat用于收集日志数据
++ Kibana 用于作为日志分析和查询的交互界面
+
+在使用docker的条件下,我们可以使用[log-pilot](https://github.com/AliyunContainerService/log-pilot)来快速部署`ELK`,这是一个
